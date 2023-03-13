@@ -4,7 +4,7 @@
 #define D 5
  
 #define NUMBER_OF_STEPS_PER_REV 512
-#define DELAY 5
+#define DELAY 4
 
 void setup() {
   Serial.begin(9600);
@@ -81,13 +81,7 @@ void rotate_degrees(int degrees) {
 }
 
 void loop(){
-  rotate_degrees(90);
-
-  delay(2500);
-  
-  rotate_degrees(-45);
-  delay(2500);
-  rotate_degrees(-45);
-
-  delay(10000);
+  rotate_degrees(60);
+  rotate_degrees(-120);
+  rotate_degrees(60);
 }
